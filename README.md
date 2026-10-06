@@ -86,13 +86,13 @@ yes
 
 ## Примеры
 
-### 1. `a+b` — НКА Томпсона
+### 1. `a+b` - НКА Томпсона
 
 После `to_nfa` + `draw` получается НКА с ε-переходами:
 
 ![NFA for a+b](docs/images/a_plus_b_nfa.png)
 
-### 2. `a+b` — минимальный полный ДКА
+### 2. `a+b` - минимальный полный ДКА
 
 После `minimize draw`:
 
@@ -126,12 +126,12 @@ cmake --build build --target automata_tests
 ## Структура проекта
 
 ```text
-NFA.hpp           — автомат: ε-замыкание, determinize, complete, minimize, …
-Regex.hpp         — разбор регулярки и конструкция Томпсона
-DotExport.hpp     — запись DOT и вызов Graphviz
-main.cpp          — интерактивная консоль
-tests/            — GoogleTest
-docs/images/      — примеры картинок для README
+NFA.hpp           - автомат: ε-замыкание, determinize, complete, minimize, …
+Regex.hpp         - разбор регулярки и конструкция Томпсона
+DotExport.hpp     - запись DOT и вызов Graphviz
+main.cpp          - интерактивная консоль
+tests/            - GoogleTest
+docs/images/      - примеры картинок для README
 scripts/run_coverage.ps1
 CMakeLists.txt
 ```
@@ -141,4 +141,4 @@ CMakeLists.txt
 - C++17
 - CMake
 - GoogleTest (подтягивается через `FetchContent`)
-- Graphviz (`dot`) — только для `draw`
+- Graphviz (`dot`) - только для `draw`
